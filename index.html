@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="bower_components/intro.js/introjs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="app/app.build.js"></script>
+</head>
+<body ng-app="app">
+
+
+
+    <div ng-controller="mainController">
+
+        <div class="container">
+
+            <div mh-intro="introOptions" mh-start-intro="startIntro" mh-intro-api="introApi">
+                <div mh-intro-item="{template:'<b>alert(\'dag\')</b>'}" >
+                    Test <br> Hallo b
+                </div>
+
+                <br><br>
+
+                <div>
+                    <img mh-intro-item="{position:'right', templateUrl: 'app/templates/step1.html', name: 'grafiek1'}" src="http://lorempixel.com/300/200/">
+                </div>
+
+                <div  >
+                    <img mh-intro-item="{position:'left', templateUrl: 'app/templates/step1.html'}" src="http://lorempixel.com/600/400/">
+                </div>
+                <br><br>
+                <div  >
+                    <img id="marien" src="http://lorempixel.com/500/400/">
+                </div>
+                <br><br>
+                <div  >
+                    <img id="marien2" src="http://lorempixel.com/600/400/">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

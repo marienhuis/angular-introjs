@@ -1,0 +1,8 @@
+.introjs-helperLayer(ng-show="options.show" style="width: {{options.width}}px; top:{{options.top}}px;left: {{options.left}}px;")
+    div(style="position: relative")
+        div(ng-if="options.templateUrl", ng-include="options.templateUrl")
+        div(ng-if="options.template", ng-bind-html="options.template")
+        //|mhIntroTooltip Text: {{options.show}}
+        button(ng-click="intro.prev()") Prev
+        button(ng-click="intro.next()") Next
+        button(ng-click="finishAction()") Finish

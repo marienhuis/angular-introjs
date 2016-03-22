@@ -1,0 +1,21 @@
+{
+  "name": "mhIntro",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "intro.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "angular-bootstrap": "^1.2.4"
+  }
+}

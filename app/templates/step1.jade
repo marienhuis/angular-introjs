@@ -1,0 +1,12 @@
+div(ng-controller="test")
+    div
+        input(type="radio", value='yes', ng-model="confirm")
+        |Ja
+        input(type="radio", value='no', ng-model="confirm")
+        |Nee
+    b
+        | Hallo: {{naam}} {{confirm}}
+    pre
+        |Hier is een text
+    pre
+        | {{intro.getCurrentStep()}} - {{marien}}
